@@ -16,3 +16,17 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+name: Publish Docker
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Publish to Registry
+      uses: hrmuwanika/odoo15-Github-Action@v4
+      with:
+        name: hrmuwanika/odoo15
+        username: hrmuwanika
+        password: 64n28.I6wT
