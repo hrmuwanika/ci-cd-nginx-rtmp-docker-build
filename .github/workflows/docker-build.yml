@@ -3,7 +3,7 @@ on: [push]                             # When pushing to any branch then run thi
 # Env variable
 env:
   DOCKER_USER: hrmuwanika
-  DOCKER_PASSWORD: 64n28.I6wT
+  DOCKER_PASSWORD: abc12345!
   REPO_NAME: odoo15
 jobs:
   push-image-to-docker-hub:               # job name
