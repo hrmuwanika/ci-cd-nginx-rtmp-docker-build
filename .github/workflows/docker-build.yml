@@ -4,7 +4,7 @@ on: [push] # When pushing to any branch then run this action
 env:
   DOCKER_USER: hrmuwanika
   DOCKER_PASSWORD: 64n28.I6wT
-  REPO_NAME: hrmuwanika/odoo15
+  REPO_NAME: odoo15
 jobs:
   push-image-to-docker-hub:  # job name
     runs-on: ubuntu-latest  # runner name : (ubuntu latest version) 
