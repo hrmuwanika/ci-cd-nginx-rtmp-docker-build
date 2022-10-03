@@ -7,7 +7,7 @@ ENV NGINX_VERSION nginx-1.23.1
 ENV NGINX_RTMP_MODULE_VERSION 1.2.2
 
 # Install dependencies
-RUN apt-get update && apt-get upgrade \
+RUN apt-get update && \
     apt-get install -y ca-certificates openssl libssl-dev && \
     rm -rf /var/lib/apt/lists/*
 
