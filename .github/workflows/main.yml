@@ -1,5 +1,5 @@
-name: Build-and-deploy-docker-image                                                                           # This a workflow title
-on: [push]                                                                                                    # When pushing to any branch then run this action
+name: Build-and-deploy-docker-image                                                                          # This a workflow title
+on: [push]                                                                                                   # When pushing to any branch then run this action
 
 # Env variable
 env:
