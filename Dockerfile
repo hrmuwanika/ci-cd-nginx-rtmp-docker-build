@@ -1,5 +1,5 @@
-FROM debian:bullseye-slim
-MAINTAINER Odoo S.A. <info@odoo.com>
+FROM debian:bullseye-20210816-slim
+MAINTAINER Henry Robert Muwanika
 
 SHELL ["/bin/bash", "-xo", "pipefail", "-c"]
 
