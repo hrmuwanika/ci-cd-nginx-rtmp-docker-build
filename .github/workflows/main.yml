@@ -15,7 +15,7 @@ jobs:
     - name: loggin to docker hub
       run: |                                                                                                 # log into docker hub account
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD  
-    - name: Getting the current date                                                                                 # get the date of the build
+    - name: Getting the current date                                                                         # get the date of the build
       id: date
       run: echo "::set-output name=date::$(date -I)"
     - name: Building the docker image                                                                           # push The image to the docker hub
