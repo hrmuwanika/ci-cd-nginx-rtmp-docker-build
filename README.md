@@ -2,7 +2,7 @@
 
 **Dockerfile**: <https://raw.githubusercontent.com/hrmuwanika/ci-cd-nginx-rtmp-docker-build/main/Dockerfile>
 
-**Note**: Note: There are [tags for each build date]. If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `hrmuwanika/nginx-rtmp:2022-10-03`.
+**Note**: Note: There are tags for each build date. If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `hrmuwanika/nginx-rtmp:2022-10-03`.
 
 # nginx-rtmp
 
@@ -66,7 +66,7 @@ docker logs nginx-rtmp
 If you need to modify the configurations you can create a file `nginx.conf` and replace the one in this image using a `Dockerfile` that is based on the image, for example:
 
 ```Dockerfile
-FROM tiangolo/nginx-rtmp
+FROM buildpack-deps:stretch
 
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
@@ -100,14 +100,4 @@ You can start from it and modify it as you need. Here's the [documentation relat
 
 * It has a simple default configuration that should allow you to send one or more streams to it and have several clients receiving multiple copies of those streams simultaneously. (It includes `rtmp_auto_push` and an automatic number of worker processes).
 
-## Release Notes
 
-### Latest Changes
-
-* 👷 Add Latest Changes GitHub Action. PR [#29](https://github.com/tiangolo/nginx-rtmp-docker/pull/29) by [@tiangolo](https://github.com/tiangolo).
-* Add CI with GitHub actions. PR [#15](https://github.com/tiangolo/nginx-rtmp-docker/pull/15).
-* Upgrade Nginx to version 1.18.0. PR [#13](https://github.com/tiangolo/nginx-rtmp-docker/pull/13) by [@Nathanael-Mtd](https://github.com/Nathanael-Mtd).
-
-## License
-
-This project is licensed under the terms of the MIT License.
