@@ -1,10 +1,8 @@
-[![Deploy](https://github.com/tiangolo/nginx-rtmp-docker/workflows/Deploy/badge.svg)](https://github.com/tiangolo/nginx-rtmp-docker/actions?query=workflow%3ADeploy)
-
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest` _(Dockerfile)_](https://github.com/tiangolo/nginx-rtmp-docker/blob/master/Dockerfile)
+* [`latest` _(Dockerfile)_]([[https://github.com/hrmuwanika/ci-cd-nginx-rtmp-docker-build/Dockerfile](https://raw.githubusercontent.com/hrmuwanika/ci-cd-nginx-rtmp-docker-build/main/Dockerfile)])
 
-**Note**: Note: There are [tags for each build date](https://hub.docker.com/r/tiangolo/nginx-rtmp/tags). If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `tiangolo/nginx-rtmp:latest-2020-08-16`.
+**Note**: Note: There are [tags for each build date]([https://hub.docker.com/r/hrmuwanika/nginx-rtmp/](https://hub.docker.com/repository/docker/hrmuwanika/nginx-rtmp)tags). If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `hrmuwanika/nginx-rtmp:2022-10-03`.
 
 # nginx-rtmp
 
