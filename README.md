@@ -1,6 +1,6 @@
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest` _(Dockerfile)_]<https://raw.githubusercontent.com/hrmuwanika/ci-cd-nginx-rtmp-docker-build/main/Dockerfile>
+**(Dockerfile**: <https://raw.githubusercontent.com/hrmuwanika/ci-cd-nginx-rtmp-docker-build/main/Dockerfile>
 
 **Note**: Note: There are [tags for each build date]. If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `hrmuwanika/nginx-rtmp:2022-10-03`.
 
