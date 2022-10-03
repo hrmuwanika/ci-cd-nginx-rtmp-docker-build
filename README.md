@@ -1,8 +1,8 @@
 ## Supported tags and respective `Dockerfile` links
 
-* [`latest` _(Dockerfile)_]([[https://github.com/hrmuwanika/ci-cd-nginx-rtmp-docker-build/Dockerfile](https://raw.githubusercontent.com/hrmuwanika/ci-cd-nginx-rtmp-docker-build/main/Dockerfile)])
+* [`latest` _(Dockerfile)_]<https://raw.githubusercontent.com/hrmuwanika/ci-cd-nginx-rtmp-docker-build/main/Dockerfile>
 
-**Note**: Note: There are [tags for each build date]([https://hub.docker.com/r/hrmuwanika/nginx-rtmp/](https://hub.docker.com/repository/docker/hrmuwanika/nginx-rtmp)tags). If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `hrmuwanika/nginx-rtmp:2022-10-03`.
+**Note**: Note: There are [tags for each build date]. If you need to "pin" the Docker image version you use, you can select one of those tags. E.g. `hrmuwanika/nginx-rtmp:2022-10-03`.
 
 # nginx-rtmp
 
@@ -10,15 +10,15 @@
 
 ## Description
 
-This [**Docker**](https://www.docker.com/) image can be used to create an RTMP server for multimedia / video streaming using [**Nginx**](http://nginx.org/en/) and [**nginx-rtmp-module**](https://github.com/arut/nginx-rtmp-module), built from the current latest sources (Nginx 1.15.0 and nginx-rtmp-module 1.2.1).
+This [**Docker**](https://www.docker.com/) image can be used to create an RTMP server for multimedia / video streaming using [**Nginx**](http://nginx.org/en/) and [**nginx-rtmp-module**](https://github.com/arut/nginx-rtmp-module), built from the current latest sources (Nginx 1.23.1 and nginx-rtmp-module 1.2.2).
 
 This was inspired by other similar previous images from [dvdgiessen](https://hub.docker.com/r/dvdgiessen/nginx-rtmp-docker/), [jasonrivers](https://hub.docker.com/r/jasonrivers/nginx-rtmp/), [aevumdecessus](https://hub.docker.com/r/aevumdecessus/docker-nginx-rtmp/) and by an [OBS Studio post](https://obsproject.com/forum/resources/how-to-set-up-your-own-private-rtmp-server-using-nginx.50/).
 
 The main purpose (and test case) to build it was to allow streaming from [**OBS Studio**](https://obsproject.com/) to different clients at the same time.
 
-**GitHub repo**: <https://github.com/tiangolo/nginx-rtmp-docker>
+**GitHub repo**: <https://github.com/hrmuwanika/ci-cd-nginx-rtmp-docker-build>
 
-**Docker Hub image**: <https://hub.docker.com/r/tiangolo/nginx-rtmp/>
+**Docker Hub image**: <https://hub.docker.com/r/hrmuwanika/nginx-rtmp/tags>
 
 ## Details
 
@@ -27,7 +27,7 @@ The main purpose (and test case) to build it was to allow streaming from [**OBS 
 * For the simplest case, just run a container with this image:
 
 ```bash
-docker run -d -p 1935:1935 --name nginx-rtmp tiangolo/nginx-rtmp
+docker run -d -p 1935:1935 --name nginx-rtmp hrmuwanika/nginx-rtmp
 ```
 
 ## How to test with OBS Studio and VLC
