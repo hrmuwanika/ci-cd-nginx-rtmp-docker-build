@@ -8,10 +8,10 @@ env:
   REPO_NAME: ${{secrets.REPO_NAME}}
 
 jobs:
-  build-push-image:                                                                                          # job name
-    runs-on: ubuntu-latest                                                                                   # runner name : (ubuntu latest version) 
-    steps:
-    - uses: actions/checkout@v3                                                                              # first action : checkout source code
+  build-push-image:                                                                                          # Job name
+    runs-on: ubuntu-latest                                                                                   # The type of runner that the job will rin on 
+    steps:                                                                                                   # Steps represents a sequence of tasks that will be executed as part of the job
+    - uses: actions/checkout@v3                                                                              # First action : checkout source code
     - name: loggin to docker hub
       run: |                                                                                                 # log into docker hub account
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD  
