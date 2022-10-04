@@ -1,6 +1,6 @@
 FROM buildpack-deps:stretch
 
-LABEL maintainer="Henry Robert Muwanika <hrmuwanika@gmail.com>"
+LABEL maintainer="Henry Muwanika <hrmuwanika@gmail.com>"
 
 # Versions of Nginx and nginx-rtmp-module to use
 ENV NGINX_VERSION nginx-1.23.1
